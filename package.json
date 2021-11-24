@@ -4,13 +4,22 @@
   "description": "A simple to do list app ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "Vanessa Ating",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.0",
     "ejs": "^2.5.7",
-    "express": "^4.15.4"
+    "express": "^4.15.4",
+    "stryker-cli": "^1.0.2"
+  },
+  "devDependencies": {
+    "@stryker-mutator/core": "^5.5.0",
+    "@stryker-mutator/jest-runner": "^5.5.0",
+    "jest": "^27.3.1"
+  },
+  "jest": {
+    "verbose": true
   }
 }
